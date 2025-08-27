@@ -46,9 +46,19 @@ function Index() {
       <Head>
         <meta property="og:title" content="JAMstack Resources | Soren Baird" />
         <title>Soren Baird | Senior Fullstack Software Engineer</title>
-        <meta property="og:image" content="https://res.cloudinary.com/sorebear/image/upload/v1544489724/portfolio/jamstack.png" />
-        <meta property="og:url" content="https://sorenbaird.com/jamstack" />
-        <meta property="og:description" content="Learn more about the JAMstack with these resources." />
+        <meta
+          property="og:title"
+          content="Soren Baird | Senior Fullstack Software Engineer"
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/sorebear/image/upload/v1544489724/portfolio/home.png"
+        />
+        <meta property="og:url" content="https://sorenbaird.com" />
+        <meta
+          property="og:description"
+          content="I am a Senior Full Stack Web Developer living and coding in Nashville, TN."
+        />
       </Head>
       <TopBar location="home" />
       <HeroImage location="home" title="Soren Baird" />
