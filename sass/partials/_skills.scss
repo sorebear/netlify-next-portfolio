@@ -1,0 +1,145 @@
+.skills {
+  &__skill-type-card {
+    padding: $single-space;
+  }
+
+  &__details {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__details--cms-development,
+  &__details--web-development,
+  &__details--mobile-development {
+    margin-top: $single-space;
+    margin-bottom: $single-space;
+
+    p {
+      margin: 0 auto $single-space auto;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__technology-container--mobile,
+  &__technology-container--web {
+    margin-bottom: $double-space;
+  }
+
+  &__skill-type-card {
+    transition: 0.3s;
+
+    &--cms-development {
+      .stitch-box__border {
+        border-color: $orange;
+      }
+
+      i {
+        background-image: linear-gradient($orange, darken($orange, 15%));
+      }
+
+      h4 {
+        color: darken($orange, 15%);
+      }
+    }
+
+    &--web-development {
+      .stitch-box__border {
+        border-color: $red;
+      }
+
+      i {
+        background-image: linear-gradient($red, darken($red, 15%));
+      }
+
+      h4 {
+        color: darken($red, 15%);
+      }
+    }
+
+    &--mobile-development {
+      .stitch-box__border {
+        border-color: $teal;
+      }
+
+      i {
+        background-image: linear-gradient($teal, darken($teal, 10%));
+      }
+
+      h4 {
+        color: darken($teal, 10%);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $desktop-breakpoint - 1) {
+  .skills {
+
+    &__skills-separator {
+      font-size: 1rem;
+    }
+
+    &__types-container {
+      justify-content: space-between !important;
+    }
+
+    &__technology-container {
+      &--mobile {
+        h2 {
+          margin-bottom: $double-space;
+        }
+      }
+
+      &--row-2 {
+        margin-top: $single-space;
+      
+        h3:first-child {
+          display: none;
+        }
+      }
+    }
+
+    &__skill-type-card--cms-development,
+    &__skill-type-card--web-development,
+    &__skill-type-card--mobile-development {
+      width: 33.33% !important;
+    }
+
+    &__details--web-development {
+      h2 {
+        color: darken($red, 15%);
+      }
+    }
+
+    &__details--cms-development {
+      h2 {
+        color: darken($orange, 15%);
+      }
+    }
+
+    &__details--mobile-development {
+      h2 {
+        color: darken($teal, 10%);
+      }
+    }
+
+    &__skill-type-card {
+      img {
+        margin: 0;
+      }
+
+      h4 {
+        display: none;
+      }
+    }
+  }
+}
+

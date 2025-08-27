@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.underline {
+  border-bottom: dashed;
+  border-bottom-width: 1.5px;
+  position: relative;
+}
+
+.sr-only {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.web-development-active .underline {
+  border-bottom-color: $red;
+
+  &::after {
+    background-color: $red;
+  }
+}
+
+.cms-development-active .underline {
+  border-bottom-color: $orange;
+
+  &::after {
+    background-color: $orange;
+  }
+}
+
+.mobile-development-active .underline {
+  border-bottom-color: $teal;
+
+  &::after {
+    background-color: $teal;
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: $desktop-breakpoint - 1) {
+  html {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .section-title h2,
+  .basic-section.hero-image h2 {
+    font-size: 2.25rem !important;
+  }
+
+  .basic-section.about,
+  .basic-section.hero-image,
+  .basic-section.contact {
+    background-attachment: unset !important;
+  }
+
+  .web-only {
+    display: none !important;
+  }
+}
