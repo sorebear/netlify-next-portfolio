@@ -54,12 +54,12 @@ class HeroImage extends Component {
         <h1 style={styles.titleStyle}>
           <span className="colored-title" style={styles.mainTitleStyle}>{title}</span>
           <span style={{ visibility: 'hidden', fontSize: 0 }}>
-            : Web Developer, CMS Developer, Mobile Developer
+            : Senior Fullstack Software Engineer
           </span>
         </h1>
         { this.props.location === 'home' && (
           <h2 style={{ ...styles.titleStyle, fontSize: '36px' }}>
-            Web Developer
+            Senior Fullstack Software Engineer
             {/* <Typist avgTypingDelay={100} stdTypdingDelay={50} cursor={{ blink: true }}>
               <Typist.Delay key="1" ms={650} />
               <span key="2">Web Devloper</span>

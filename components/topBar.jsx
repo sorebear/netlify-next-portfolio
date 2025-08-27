@@ -39,7 +39,7 @@ class TopBar extends Component {
   constructor(props) {
     super(props);
     this.window = null;
-    this.navLinks = ['about', 'skills', 'resources', 'work', 'connect'];
+    this.navLinks = ['about', 'skills', 'resources', 'work'];
     this.scrollDestination = null;
     this.state = {
       topBarClass: 'top-bar--unscrolled',
@@ -118,15 +118,14 @@ class TopBar extends Component {
             <Link
               href="/"
               passHref
+              style={{ cursor: 'pointer' }}
             >
-              <a style={{ cursor: 'pointer' }}>
-                <h2
-                  className="top-bar__logo"
-                  style={styles.logoStyle}
-                >
-                  Soren Baird
-                </h2>
-              </a>
+              <h2
+                className="top-bar__logo"
+                style={styles.logoStyle}
+              >
+                Soren Baird
+              </h2>
             </Link>
           )}
           <ul className="nav" style={styles.navStyle}>

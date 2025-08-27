@@ -17,17 +17,13 @@ const styles = {
 export default () => (
   <div style={styles.aboutMeStyle}>
     <h2 style={styles.titleStyle}>
-      Hi, I&apos;m Soren. I&apos;m a web and mobile developer with an eye for design, and a love for
-      learning new things and meeting new people.
+      Hi, I&apos;m Soren.
     </h2>
     <p style={styles.textStyle}>
-      I recently made the career change from working in Leadership Development and Human Resources,
-      and I could not be happier with the decision. I now work as a full-time and freelance
-      developer, spending most of my free time learning new technologies and building side projects.
+      Lead-oriented Fullstack Engineer with 8 years of experience building and scaling customer-facing web applications, including 5+ years on high-traffic sites with millions of monthly visitors. 
     </p>
     <p style={styles.textStyle}>
-      If you&apos;re interested in hiring me for a project or just grabbing a drink and talking
-      about technology and life, send me a message!
+      Proven record of leading migrations, mentoring developers, and coordinating cross-team initiatives. Combines deep React/Next.js expertise with prior experience managing direct reports to deliver both technical excellence and team growth.
     </p>
   </div>
 );

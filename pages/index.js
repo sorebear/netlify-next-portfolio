@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import Head from 'next/head';
 
 // React Components
 import HeroImage from '../sections/heroImage';
@@ -42,6 +43,13 @@ function Index() {
 
   return (
     <div className={`content-wrapper ${activeSet}-active`}>
+      <Head>
+        <meta property="og:title" content="JAMstack Resources | Soren Baird" />
+        <title>Soren Baird | Senior Fullstack Software Engineer</title>
+        <meta property="og:image" content="https://res.cloudinary.com/sorebear/image/upload/v1544489724/portfolio/jamstack.png" />
+        <meta property="og:url" content="https://sorenbaird.com/jamstack" />
+        <meta property="og:description" content="Learn more about the JAMstack with these resources." />
+      </Head>
       <TopBar location="home" />
       <HeroImage location="home" title="Soren Baird" />
       <BasicSection
@@ -84,7 +92,7 @@ function Index() {
           updateActiveSet={updateActiveSet}
         />
       </BasicSection>
-      <BasicSection
+      {/* <BasicSection
         id="connect"
         className="contact"
         style={{
@@ -97,7 +105,7 @@ function Index() {
           Connect
         </SectionTitle>
         <Contact />
-      </BasicSection>
+      </BasicSection> */}
       <section id="footer">
         <Footer />
       </section>

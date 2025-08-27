@@ -91,14 +91,74 @@ const MainWork = ({ activeSet, angledLineHeight }) => {
             </a>
           </div>
           <div style={styles.textContainerStyle}>
+            <h3 style={{ textAlign: 'center' }}>2020 - Present</h3>
             <p>
-              I am currently working as a Senior Fullstack Software Engineer at{' '}
+              I currently work as a Senior Fullstack Software Engineer at{' '}
               {textLink('Paramount', 'https://www.paramount.com')}.
             </p>
             <p>
-              I work within the Media Ventures team, contirubting to sites like{' '}
-              {textLink('Entertainment Tonight', 'https://www.etonline.com/')} and{' '}
-              {textLink('Inside Edition', 'https://www.insideedition.com/')}.
+              I work on the CBS Digital team, supporting {textLink('CBS.com', 'https://www.cbs.com')}.
+            </p>
+            <p>
+              Previously, I worked with the Media Ventures team, contirubting to sites like{' '}
+              {textLink('Entertainment Tonight', 'https://www.etonline.com/')},{' '}
+              {textLink('Inside Edition', 'https://www.insideedition.com/')}, and{' '}
+              {textLink('The Drew Barrymore Show', 'https://www.thedrewbarrymoreshow.com/')}.
+              On my new team, we still support these sites, though they're no longer under active development.
+            </p>
+          </div>
+        </div>
+        <div style={styles.contentWrapperStyle} className="work__main-work-2">
+          <div style={styles.textContainerStyle}>
+            <h3 style={{ textAlign: 'center' }}>2019 - 2020</h3>
+            <p>
+              Previously, I was a Senior Web Developer at 360 BC Group, a parent corporation for
+              three B2B companies: 360Biz, 360Civic, and {textLink('360Circuits', 'https://360circuits.com')}.
+            </p>
+            <p>
+              I worked primarily with 360Civic building
+              large websites with custom functionality for public sector entities (school districts,
+              cities, counties, utilities).
+            </p>
+          </div>
+          <div style={styles.logoContainerStyle}>
+            <a
+              href="https://www.360bcgroup.com/"
+              className="work__360bc-group-link"
+              rel="noopener noreferrer"
+              target="_blank"
+              style={styles.anchorStyle}
+            >
+              <img
+                src="/images/work/360logo.png"
+                style={{ ...styles.logoStyle, paddingRight: '44px' }}
+                alt="360 BC Group Logo"
+              />
+            </a>
+          </div>
+        </div>
+        <div style={styles.contentWrapperStyle} className="work__main-work-1">
+          <div style={styles.logoContainerStyle}>
+            <a
+              href="https://envivent.com"
+              className="work__envivent-link"
+              rel="noopener noreferrer"
+              target="_blank"
+              style={{ width: '100%' }}
+            >
+              <img
+                src="/images/work/envivent.svg"
+                style={styles.logoStyle}
+                alt="Envivent Web Development"
+              />
+            </a>
+          </div>
+          <div style={styles.textContainerStyle}>
+            <h3 style={{ textAlign: 'center' }}>2017 - 2019</h3>
+            <p>
+              Before that, I worked at {textLink('Envivent', 'https://envivent.com')} as a Web
+              Developer. We worked primarily with healthcare ad agencies, acting as their
+              development partner.
             </p>
           </div>
         </div>
